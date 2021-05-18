@@ -2,6 +2,7 @@
 
 const { expect } = require("@jest/globals")
 const { capitalize } = require("lodash")
+const { string } = require("prop-types")
 
 // // Please read all questions thoroughly
 // // Pseudo coding is REQUIRED
@@ -120,9 +121,18 @@ const capitalized = (array) => {
     
         })
     }
-    const firstVIndex = (string) => {  // using the built in method .split that will make a string into an array.
-        let array = string.split("") // I know i need to the function to be inside the filter but wasnt successful in this function.
-        console.log(array)
-        return array.filter(value => {
-        })
+   //const firstVIndex = (string) => {  // using the built in method .split that will make a string into an array.
+      // for (let i=0; 1<string.length; i++){
+       //    if(string[i] === "a || string(i) === "e" || string(i) === "i || string (i) === "o ||
+    //    } string(i) === "u") {
+        //    return i 
+    //    }
+    // }
+// }
+   
+    const firstVowel = (string) =>{
+    let vowelsArray = string.split("").filter(value => {
+        return value === "a" || value === "e" || value === "i" || value === "o" || value === "u"
+     return string.indexOf(vowelsArray[0])
+}
     }

@@ -4,7 +4,10 @@
 
 <!-- To see the component, drag this file into the browser. -->
 
+
 <!-- HINT: Check the console in the browser developer tools for errors. -->
+
+// Error 
 
 
 
@@ -35,7 +38,7 @@
 
         handleMoodOptions = () => {
           let randomIndex = Math.floor(Math.random() * this.state.moods.length )
-          this.setState({ currentMood: moods[randomIndex] })
+          this.setState({ currentMood: this.state[randomIndex] })
         }
 
         render(){
@@ -49,7 +52,7 @@
                 { this.state.currentMood }
               </div>
 
-              <button onClick={ handleMoodOptions }>
+              <button onClick={ this.handleMoodOptions }>
                 Click Here For Next Mood option
               </button>
 
@@ -58,7 +61,9 @@
       }
 
 
-
+// messaged sarah and went over the problems. The structure of the file and the component is fine as is. following the error messages which sarah said the first error I still couldnt understand the problem. 
+// Spent over two hours pair programming and still couldnt figure out the error messages.
+// 
 
 
       // No need to change anything below this line
